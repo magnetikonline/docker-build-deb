@@ -35,8 +35,7 @@ $ ls -l nginx_1.6.0-1_amd64.deb
 
 Install on target system:
 ```sh
-# Install dependent packages - based off configure.sh
-$ sudo apt-get install ????
+# Should be no dependent packages needed - based off configure.sh
 $ sudo dpkg -i /path/to/nginx_1.6.0-1_amd64.deb
 ```
 
@@ -60,6 +59,6 @@ $ ls -l php_5.5.12-1_amd64.deb
 Install on target system:
 ```sh
 # Install dependent packages - based off configure.sh
-$ sudo apt-get install ????
+$ sudo apt-get install libjpeg62 libxml2 libcurl3
 $ sudo dpkg -i /path/to/php_5.5.12-1_amd64.deb
 ```
