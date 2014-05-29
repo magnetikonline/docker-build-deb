@@ -2,6 +2,7 @@
 ./configure \
 	--conf-path=/etc/nginx/nginx.conf \
 	--error-log-path=/var/log/nginx/error.log \
+	--pid-path=/run/nginx.pid \
 	--with-http_gzip_static_module \
 	--with-http_stub_status_module \
 	--without-http_access_module \
