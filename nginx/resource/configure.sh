@@ -1,4 +1,5 @@
 #!/bin/bash
+
 ./configure \
 	--conf-path=/etc/nginx/nginx.conf \
 	--error-log-path=/var/log/nginx/error.log \

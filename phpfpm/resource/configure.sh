@@ -1,4 +1,5 @@
 #!/bin/bash
+
 ./configure \
 	--with-config-file-path=/etc/php5 \
 	--disable-all \
