@@ -13,6 +13,6 @@ ADD ./resource/configure.sh /root/build/nginx-1.6.0/
 WORKDIR /root/build/nginx-1.6.0
 RUN chmod a+x configure.sh
 RUN ./configure.sh && make
-RUN echo "Nginx 1.6.0" > description-pak && checkinstall -Dy --install=no --nodoc make -i install
+RUN echo "magnetik: Nginx 1.6.0" > description-pak && checkinstall -Dy --install=no --nodoc make -i install
 
 CMD ['/bin/bash']
