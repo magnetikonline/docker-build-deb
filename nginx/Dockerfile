@@ -15,4 +15,4 @@ RUN chmod a+x configure.sh
 RUN ./configure.sh && make
 RUN echo "magnetikonline: Nginx 1.6.0" > description-pak && checkinstall -Dy --install=no --nodoc make -i install
 
-CMD ['/bin/bash']
+CMD ["/bin/bash"]
