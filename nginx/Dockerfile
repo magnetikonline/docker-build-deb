@@ -3,6 +3,7 @@ MAINTAINER Peter Mescalchin "peter@magnetikonline.com"
 
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install checkinstall libpcre3-dev zlib1g-dev
+RUN apt-get clean
 
 RUN mkdir /root/build
 ADD http://nginx.org/download/nginx-1.6.0.tar.gz /root/build/

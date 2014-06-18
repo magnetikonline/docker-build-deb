@@ -3,6 +3,7 @@ MAINTAINER Peter Mescalchin "peter@magnetikonline.com"
 
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install checkinstall libxml2-dev libcurl4-openssl-dev libjpeg62-dev libpng12-dev
+RUN apt-get clean
 
 RUN mkdir /root/build
 ADD http://php.net/get/php-5.5.13.tar.gz/from/this/mirror /root/build/php-5.5.13.tar.gz
