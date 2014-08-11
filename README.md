@@ -24,10 +24,10 @@ $ ln -sf /usr/bin/docker.io /usr/local/bin/docker
 Create and extract package:
 ```sh
 $ ./build.sh
-# Waiting... as Docker builds image
+# waiting... as Docker builds image
 
 $ ./extractdeb.sh
-# Package extract from container
+# package extract from container
 
 $ ls -l nginx_1.6.0-1_amd64.deb
 -rw-r--r-- 1 root root 178012 May 22 20:54 nginx_1.6.0-1_amd64.deb
@@ -47,10 +47,10 @@ $ sudo dpkg -i /path/to/nginx_1.6.0-1_amd64.deb
 Create and extract package:
 ```sh
 $ ./build.sh
-# Waiting... as Docker builds image
+# waiting... as Docker builds image
 
 $ ./extractdeb.sh
-# Package extract from container
+# package extract from container
 
 $ ls -l php_5.5.15-1_amd64.deb
 -rw-r--r-- 1 root root 178012 May 22 21:12 php_5.5.15-1_amd64.deb
