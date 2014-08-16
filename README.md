@@ -18,7 +18,7 @@ $ ln -sf /usr/bin/docker.io /usr/local/bin/docker
 
 ## Nginx
 - **OS:** Ubuntu 14.04LTS
-- **Version:** 1.6.0
+- **Version:** 1.6.1
 - **Configure:** [nginx/resource/configure.sh](nginx/resource/configure.sh)
 
 Create and extract package:
@@ -29,14 +29,14 @@ $ ./build.sh
 $ ./extractdeb.sh
 # package extract from container
 
-$ ls -l nginx_1.6.0-1_amd64.deb
--rw-r--r-- 1 root root 178012 May 22 20:54 nginx_1.6.0-1_amd64.deb
+$ ls -l nginx_1.6.1-1_amd64.deb
+-rw-r--r-- 1 root root 178012 May 22 20:54 nginx_1.6.1-1_amd64.deb
 ```
 
 Install on target system:
 ```sh
 # Should be no dependent packages needed - based off configure.sh
-$ sudo dpkg -i /path/to/nginx_1.6.0-1_amd64.deb
+$ sudo dpkg -i /path/to/nginx_1.6.1-1_amd64.deb
 ```
 
 ## PHP-FPM
