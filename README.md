@@ -43,7 +43,7 @@ $ sudo dpkg -i /path/to/nginx_1.6.1-1_amd64.deb
 
 ## PHP-FPM
 - **OS:** Ubuntu 14.04LTS
-- **Version:** 5.5.15 (PHP-FPM and CLI only)
+- **Version:** 5.5.16 (PHP-FPM and CLI only)
 - **Configure:** [phpfpm/resource/configure.sh](phpfpm/resource/configure.sh)
 
 Create and extract package:
@@ -54,13 +54,13 @@ $ ./build.sh
 $ ./extractdeb.sh
 # package extract from container
 
-$ ls -l php_5.5.15-1_amd64.deb
--rw-r--r-- 1 root root 178012 May 22 21:12 php_5.5.15-1_amd64.deb
+$ ls -l php_5.5.16-1_amd64.deb
+-rw-r--r-- 1 root root 178012 May 22 21:12 php_5.5.16-1_amd64.deb
 ```
 
 Install on target system:
 ```sh
 # Install dependent packages - based off configure.sh
 $ sudo apt-get install libjpeg62 libxml2 libcurl3
-$ sudo dpkg -i /path/to/php_5.5.15-1_amd64.deb
+$ sudo dpkg -i /path/to/php_5.5.16-1_amd64.deb
 ```
