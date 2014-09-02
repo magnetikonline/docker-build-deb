@@ -6,7 +6,6 @@
 	--pid-path=/run/nginx.pid \
 	--with-http_gzip_static_module \
 	--with-http_stub_status_module \
-	--without-http_access_module \
 	--without-http_auth_basic_module \
 	--without-http_browser_module \
 	--without-http_charset_module \
