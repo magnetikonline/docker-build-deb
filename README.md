@@ -37,13 +37,13 @@ $ ls -l nginx_1.6.1-1_amd64.deb
 
 Install on target system:
 ```sh
-# Should be no dependent packages needed - based off packaged configure.sh
+# should be no dependent packages needed - based off packaged configure.sh
 $ sudo dpkg -i /path/to/nginx_1.6.1-1_amd64.deb
 ```
 
 ## PHP-FPM
 - **OS:** Ubuntu 14.04LTS
-- **Version:** 5.6.0 (PHP-FPM and CLI only)
+- **Version:** 5.6.0 (PHP-FPM and CLI)
 - **Configure:** [phpfpm/resource/configure.sh](phpfpm/resource/configure.sh)
 
 Create and extract package:
@@ -60,7 +60,7 @@ $ ls -l php_5.6.0-1_amd64.deb
 
 Install on target system:
 ```sh
-# Install dependent packages - based off packaged configure.sh
-$ sudo apt-get install libjpeg62 libxml2 libcurl3
+# install dependent packages - based off packaged configure.sh
+$ sudo apt-get install libjpeg62
 $ sudo dpkg -i /path/to/php_5.6.0-1_amd64.deb
 ```
