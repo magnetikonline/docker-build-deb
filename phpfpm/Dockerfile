@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER Peter Mescalchin "peter@magnetikonline.com"
 
 RUN apt-get update && apt-get -y upgrade
-RUN apt-get -y install checkinstall libxml2-dev libcurl4-openssl-dev libjpeg62-dev libpng12-dev
+RUN apt-get -y install checkinstall libcurl4-openssl-dev libjpeg62-dev libpng12-dev libxml2-dev
 RUN apt-get clean
 
 RUN mkdir /root/build
