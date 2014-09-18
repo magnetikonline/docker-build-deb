@@ -20,7 +20,7 @@ Alternatively (and probably a better idea), you can install the latest stable [`
 
 ## Nginx
 - **OS:** Ubuntu 14.04LTS
-- **Version:** 1.6.1
+- **Version:** 1.6.2
 - **Configure:** [nginx/resource/configure.sh](nginx/resource/configure.sh)
 
 Create and extract package:
@@ -31,14 +31,14 @@ $ ./build.sh
 $ ./extractdeb.sh
 # package extract from container
 
-$ ls -l nginx_1.6.1-1_amd64.deb
--rw-r--r-- 1 root root 177978 Aug 16 13:10 nginx_1.6.1-1_amd64.deb
+$ ls -l nginx_1.6.2-1_amd64.deb
+-rw-r--r-- 1 root root 178434 Sep 18 11:21 nginx_1.6.2-1_amd64.deb
 ```
 
 Install on target system:
 ```sh
 # should be no dependent packages needed - based off packaged configure.sh
-$ sudo dpkg -i /path/to/nginx_1.6.1-1_amd64.deb
+$ sudo dpkg -i /path/to/nginx_1.6.2-1_amd64.deb
 ```
 
 ## PHP-FPM
