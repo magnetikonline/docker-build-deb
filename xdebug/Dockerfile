@@ -10,8 +10,8 @@ ADD http://xdebug.org/files/xdebug-2.2.5.tgz /root/build/xdebug-2.2.5.tgz
 WORKDIR /root/build
 RUN tar xf xdebug-2.2.5.tgz
 
-ADD ./php_5.6.0-1_amd64.deb /root/
-RUN dpkg -i /root/php_5.6.0-1_amd64.deb
+ADD ./resources/php_5.6.2-1_amd64.deb /root/
+RUN dpkg -i /root/php_5.6.2-1_amd64.deb
 WORKDIR /root/build/xdebug-2.2.5
 RUN /usr/local/bin/phpize
 RUN ./configure --enable-xdebug
