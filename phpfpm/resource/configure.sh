@@ -5,6 +5,9 @@
 	--with-config-file-scan-dir=/etc/php5/conf.d \
 	--disable-all \
 	--disable-cgi \
+	--with-mcrypt \
+	--with-gettext \
+	--enable-intl \
 	--enable-bcmath \
 	--enable-fpm \
 	--enable-hash \
