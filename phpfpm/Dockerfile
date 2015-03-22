@@ -1,4 +1,4 @@
-FROM ubuntu:14.04.1
+FROM ubuntu:14.04.2
 MAINTAINER Peter Mescalchin "peter@magnetikonline.com"
 
 RUN apt-get update && apt-get -y upgrade
@@ -8,7 +8,7 @@ RUN apt-get clean
 RUN mkdir /root/build
 ADD http://php.net/get/php-5.6.6.tar.gz/from/this/mirror /root/build/php-5.6.6.tar.gz
 WORKDIR /root/build
-RUN tar xf php-5.6.6.tar.gz
+RUN tar -xf php-5.6.6.tar.gz
 
 ADD ./resource/configure.sh /root/build/php-5.6.6/
 WORKDIR /root/build/php-5.6.6
