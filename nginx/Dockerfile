@@ -5,7 +5,6 @@ RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install checkinstall libpcre3-dev zlib1g-dev
 RUN apt-get clean
 
-RUN mkdir /root/build
 ADD http://nginx.org/download/nginx-1.6.2.tar.gz /root/build/
 WORKDIR /root/build
 RUN tar -xf nginx-1.6.2.tar.gz

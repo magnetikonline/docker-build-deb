@@ -43,7 +43,7 @@ $ sudo dpkg -i /path/to/nginx_1.6.2-1_amd64.deb
 
 ## PHP-FPM
 - **OS:** Ubuntu 14.04LTS
-- **Version:** 5.6.6 (PHP-FPM and CLI)
+- **Version:** 5.6.7 (PHP-FPM and CLI)
 - **Configure:** [phpfpm/resource/configure.sh](phpfpm/resource/configure.sh)
 
 Create and extract package:
@@ -54,13 +54,13 @@ $ ./build.sh
 $ ./extractdeb.sh
 # package extract from container
 
-$ ls -l php_5.6.6-1_amd64.deb
--rw-r--r-- 1 root root 3282924 Feb 22 12:55 php_5.6.6-1_amd64.deb
+$ ls -l php_5.6.7-1_amd64.deb
+-rw-r--r-- 1 root root 3285938 Mar 24 20:07 php_5.6.7-1_amd64.deb
 ```
 
 Install on target system:
 ```sh
 # install dependent packages - based off packaged configure.sh
 $ sudo apt-get install libjpeg62
-$ sudo dpkg -i /path/to/php_5.6.6-1_amd64.deb
+$ sudo dpkg -i /path/to/php_5.6.7-1_amd64.deb
 ```
