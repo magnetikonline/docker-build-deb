@@ -55,7 +55,7 @@ $ ./extractdeb.sh
 # package extract from container
 
 $ ls -l php_5.6.11-1_amd64.deb
--rw-r--r-- 1 root root 3363622 Jun  7 13:41 php_5.6.11-1_amd64.deb
+-rw-r--r-- 1 root root 3374594 Jul 12 18:35 php_5.6.11-1_amd64.deb
 ```
 
 Install on target system:
