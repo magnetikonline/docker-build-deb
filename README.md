@@ -19,7 +19,7 @@ $ ln -sf /usr/bin/docker.io /usr/local/bin/docker
 Alternatively (and probably a better idea), you can install the latest stable [`lxc-docker`](https://docs.docker.com/installation/ubuntulinux/#ubuntu-trusty-1404-lts-64-bit) package from Docker's own repository.
 
 ## Nginx
-- **OS:** Ubuntu 14.04LTS
+- **OS:** Ubuntu 14.04.02 LTS
 - **Version:** 1.8.0
 - **Configure:** [nginx/resource/configure.sh](nginx/resource/configure.sh)
 
@@ -42,8 +42,8 @@ $ sudo dpkg -i /path/to/nginx_1.8.0-1_amd64.deb
 ```
 
 ## PHP-FPM
-- **OS:** Ubuntu 14.04LTS
-- **Version:** 5.6.11 (PHP-FPM and CLI)
+- **OS:** Ubuntu 14.04.02 LTS
+- **Version:** 5.6.12 (PHP-FPM and CLI)
 - **Configure:** [phpfpm/resource/configure.sh](phpfpm/resource/configure.sh)
 
 Create and extract package:
@@ -54,13 +54,13 @@ $ ./build.sh
 $ ./extractdeb.sh
 # package extract from container
 
-$ ls -l php_5.6.11-1_amd64.deb
--rw-r--r-- 1 root root 3374594 Jul 12 18:35 php_5.6.11-1_amd64.deb
+$ ls -l php_5.6.12-1_amd64.deb
+-rw-r--r-- 1 root root 3370738 Aug  8 10:25 php_5.6.12-1_amd64.deb
 ```
 
 Install on target system:
 ```sh
 # install dependent packages - based off packaged configure.sh
 $ sudo apt-get install libjpeg62
-$ sudo dpkg -i /path/to/php_5.6.11-1_amd64.deb
+$ sudo dpkg -i /path/to/php_5.6.12-1_amd64.deb
 ```
