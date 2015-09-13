@@ -16,7 +16,13 @@ $ sudo apt-get install docker.io
 $ ln -sf /usr/bin/docker.io /usr/local/bin/docker
 ```
 
-Alternatively (and probably a better idea), you can install the latest stable [`lxc-docker`](https://docs.docker.com/installation/ubuntulinux/#ubuntu-trusty-1404-lts-64-bit) package from Docker's own repository.
+Alternatively (and probably a better idea), you can install the latest stable [`docker-engine`](https://docs.docker.com/installation/ubuntulinux/) package from Docker's own repository using the following commands:
+
+```sh
+$ curl -sSL https://get.docker.com/ | sh
+# add USERNAME to docker group - avoids the need for "sudo docker" calls.
+$ sudo usermod -aG docker USERNAME
+```
 
 ## Nginx
 - **OS:** Ubuntu 14.04.02 LTS
