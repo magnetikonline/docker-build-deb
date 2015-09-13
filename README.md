@@ -25,7 +25,7 @@ $ sudo usermod -aG docker USERNAME
 ```
 
 ## Nginx
-- **OS:** Ubuntu 14.04.02 LTS
+- **OS:** Ubuntu 14.04.03 LTS
 - **Version:** 1.8.0
 - **Configure:** [nginx/resource/configure.sh](nginx/resource/configure.sh)
 
@@ -48,7 +48,7 @@ $ sudo dpkg -i /path/to/nginx_1.8.0-1_amd64.deb
 ```
 
 ## PHP-FPM
-- **OS:** Ubuntu 14.04.02 LTS
+- **OS:** Ubuntu 14.04.03 LTS
 - **Version:** 5.6.13 (PHP-FPM and CLI)
 - **Configure:** [phpfpm/resource/configure.sh](phpfpm/resource/configure.sh)
 
@@ -61,7 +61,7 @@ $ ./extractdeb.sh
 # package extract from container
 
 $ ls -l php_5.6.13-1_amd64.deb
--rw-r--r-- 1 root root 3370738 Aug  8 10:25 php_5.6.13-1_amd64.deb
+-rw-r--r-- 1 root root 3383262 Sep 13 15:38 php_5.6.13-1_amd64.deb
 ```
 
 Install on target system:
