@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo docker build -t magnetikonline/buildphpfpm .
+docker build -t magnetikonline/buildphpfpm .

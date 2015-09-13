@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo docker build -t magnetikonline/buildnginx .
+docker build -t magnetikonline/buildnginx .
