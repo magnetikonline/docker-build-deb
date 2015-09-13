@@ -1,6 +1,6 @@
 #!/bin/bash
 
 containerID=$(sudo docker run -d magnetikonline/buildphpfpm)
-sudo docker cp $containerID:/root/build/php-5.6.12/php_5.6.12-1_amd64.deb .
+sudo docker cp $containerID:/root/build/php-5.6.13/php_5.6.13-1_amd64.deb .
 sleep 1
 sudo docker rm $containerID
