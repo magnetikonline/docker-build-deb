@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t magnetikonline/buildphpfpm .
+docker build --tag magnetikonline/buildphpfpm .

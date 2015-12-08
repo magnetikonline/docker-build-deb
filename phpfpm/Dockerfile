@@ -11,7 +11,7 @@ RUN tar -xf php-5.6.16.tar.gz
 
 ADD ./resource/configure.sh /root/build/php-5.6.16/
 WORKDIR /root/build/php-5.6.16
-RUN chmod a+x configure.sh
+RUN chmod u+x configure.sh
 RUN ./configure.sh && make
 RUN echo "magnetikonline: PHP 5.6.16" > description-pak && \
 	checkinstall -Dy --install=no --nodoc make -i install
