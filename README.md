@@ -25,7 +25,7 @@ $ sudo usermod -aG docker USERNAME
 ```
 
 ## Nginx
-- **OS:** Ubuntu 14.04.3 LTS
+- **OS:** Ubuntu 14.04.4 LTS
 - **Version:** 1.8.0
 - **Configure:** [nginx/resource/configure.sh](nginx/resource/configure.sh)
 
@@ -48,8 +48,8 @@ $ sudo dpkg -i /path/to/nginx_1.8.0-1_amd64.deb
 ```
 
 ## PHP-FPM
-- **OS:** Ubuntu 14.04.3 LTS
-- **Version:** 7.0.0 (PHP-FPM and CLI)
+- **OS:** Ubuntu 14.04.4 LTS
+- **Version:** 7.0.3 (PHP-FPM and CLI)
 - **Configure:** [phpfpm/resource/configure.sh](phpfpm/resource/configure.sh)
 
 Create and extract package:
@@ -60,13 +60,13 @@ $ ./build.sh
 $ ./extractdeb.sh
 # package extract from container
 
-$ ls -l php_7.0.0-1_amd64.deb
--rw-r--r-- 1 root root 3774996 Dec  8 10:58 php_7.0.0-1_amd64.deb
+$ ls -l php_7.0.3-1_amd64.deb
+-rw-r--r-- 1 root root 3790434 Feb 22 16:15 php_7.0.3-1_amd64.deb
 ```
 
 Install on target system:
 ```sh
 # install dependent packages - based off packaged configure.sh
 $ sudo apt-get install libjpeg62
-$ sudo dpkg -i /path/to/php_7.0.0-1_amd64.deb
+$ sudo dpkg -i /path/to/php_7.0.3-1_amd64.deb
 ```
