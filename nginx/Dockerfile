@@ -1,5 +1,5 @@
 FROM ubuntu:14.04.4
-MAINTAINER Peter Mescalchin "peter@magnetikonline.com"
+MAINTAINER Peter Mescalchin <peter@magnetikonline.com>
 
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install checkinstall libpcre3-dev zlib1g-dev
