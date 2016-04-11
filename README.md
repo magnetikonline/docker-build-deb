@@ -20,7 +20,7 @@ Alternatively (and probably a better idea), install the latest stable [`docker-e
 
 ## Nginx
 - **OS:** Ubuntu 14.04.4 LTS
-- **Version:** 1.8.0
+- **Version:** 1.8.1
 - **Configure:** [nginx/resource/configure.sh](nginx/resource/configure.sh)
 
 Create and extract package:
@@ -31,14 +31,14 @@ $ ./build.sh
 $ ./extractdeb.sh
 # package extract from container
 
-$ ls -l nginx_1.8.0-1_amd64.deb
--rw-r--r-- 1 root root 187224 Jun  7 12:53 nginx_1.8.0-1_amd64.deb
+$ ls -l nginx_1.8.1-1_amd64.deb
+-rw-r--r-- 1 root root 187396 Apr 11 23:48 nginx_1.8.1-1_amd64.deb
 ```
 
 Install on target system:
 ```sh
 # should be no dependent packages needed - based off packaged configure.sh
-$ sudo dpkg -i /path/to/nginx_1.8.0-1_amd64.deb
+$ sudo dpkg -i /path/to/nginx_1.8.1-1_amd64.deb
 ```
 
 ## PHP-FPM
