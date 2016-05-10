@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 ./configure \
 	--conf-path=/etc/nginx/nginx.conf \
@@ -18,8 +18,18 @@
 	--without-http_referer_module \
 	--without-http_scgi_module \
 	--without-http_split_clients_module \
+	--without-http_upstream_hash_module \
 	--without-http_upstream_ip_hash_module \
 	--without-http_upstream_keepalive_module \
 	--without-http_upstream_least_conn_module \
+	--without-http_upstream_zone_module \
 	--without-http_userid_module \
-	--without-http_uwsgi_module
+	--without-http_uwsgi_module \
+	--without-mail_imap_module \
+	--without-mail_pop3_module \
+	--without-mail_smtp_module \
+	--without-stream_access_module \
+	--without-stream_limit_conn_module \
+	--without-stream_upstream_hash_module \
+	--without-stream_upstream_least_conn_module \
+	--without-stream_upstream_zone_module

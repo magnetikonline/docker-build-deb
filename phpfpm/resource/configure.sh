@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 ./configure \
 	--with-config-file-path=/etc/php5 \
