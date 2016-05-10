@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 ./configure \
-	--with-config-file-path=/etc/php5 \
+	--with-config-file-path=/etc/php7 \
 	--disable-all \
 	--disable-cgi \
 	--enable-bcmath \
