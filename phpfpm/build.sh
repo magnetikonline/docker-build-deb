@@ -1,3 +1,6 @@
 #!/bin/bash -e
 
-docker build --tag magnetikonline/buildphpfpm .
+DIRNAME=$(dirname "$0")
+
+
+docker build --tag magnetikonline/buildphpfpm "$DIRNAME"
