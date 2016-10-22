@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER Peter Mescalchin <peter@magnetikonline.com>
 
-ENV VERSION 1.10.1
+ENV VERSION 1.10.2
 
 RUN apt-get update && apt-get -y upgrade && \
 	apt-get -y install checkinstall libpcre3-dev zlib1g-dev && \
