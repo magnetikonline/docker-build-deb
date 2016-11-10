@@ -43,7 +43,7 @@ $ sudo dpkg -i /path/to/nginx_1.10.2-1_amd64.deb
 
 ## PHP-FPM
 - **OS:** Ubuntu 16.04LTS
-- **Version:** 7.0.8 (PHP-FPM and CLI)
+- **Version:** 7.0.13 (PHP-FPM and CLI)
 - **Configure:** [phpfpm/resource/configure.sh](phpfpm/resource/configure.sh)
 
 Create and extract package:
@@ -54,13 +54,13 @@ $ ./build.sh
 $ ./extractdeb.sh
 # package extract from container
 
-$ ls -l php_7.0.8-1_amd64.deb
--rw-r--r-- 1 root root 3919830 Jun 25 15:49 php_7.0.8-1_amd64.deb
+$ ls -l php_7.0.13-1_amd64.deb
+-rw-r--r-- 1 root root 3970166 Nov 11 10:27 php_7.0.13-1_amd64.deb
 ```
 
 Install on target system:
 ```sh
 # install dependent packages - based off packaged configure.sh
 $ sudo apt-get install libjpeg62
-$ sudo dpkg -i /path/to/php_7.0.8-1_amd64.deb
+$ sudo dpkg -i /path/to/php_7.0.13-1_amd64.deb
 ```
