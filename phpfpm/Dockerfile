@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER Peter Mescalchin <peter@magnetikonline.com>
 
-ENV VERSION 7.0.13
+ENV VERSION 7.1.3
 
 RUN apt-get update && apt-get -y upgrade && \
 	apt-get -y install checkinstall libcurl4-openssl-dev libjpeg62-dev libpng12-dev libxml2-dev && \

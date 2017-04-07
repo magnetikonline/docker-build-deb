@@ -4,6 +4,7 @@
 	--with-config-file-path=/etc/php7 \
 	--disable-all \
 	--disable-cgi \
+	--disable-short-tags \
 	--enable-bcmath \
 	--enable-fpm \
 	--enable-hash \
