@@ -6,6 +6,7 @@
 	--pid-path=/run/nginx.pid \
 	--with-http_gzip_static_module \
 	--with-http_stub_status_module \
+	--with-http_v2_module \
 	--without-http_auth_basic_module \
 	--without-http_browser_module \
 	--without-http_charset_module \
@@ -24,12 +25,4 @@
 	--without-http_upstream_least_conn_module \
 	--without-http_upstream_zone_module \
 	--without-http_userid_module \
-	--without-http_uwsgi_module \
-	--without-mail_imap_module \
-	--without-mail_pop3_module \
-	--without-mail_smtp_module \
-	--without-stream_access_module \
-	--without-stream_limit_conn_module \
-	--without-stream_upstream_hash_module \
-	--without-stream_upstream_least_conn_module \
-	--without-stream_upstream_zone_module
+	--without-http_uwsgi_module

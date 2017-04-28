@@ -4,6 +4,6 @@ DIRNAME=$(dirname "$0")
 
 
 containerID=$(docker run --detach magnetikonline/buildnginx)
-docker cp "$containerID:/root/build/nginx-1.10.3/nginx_1.10.3-1_amd64.deb" "$DIRNAME"
+docker cp "$containerID:/root/build/nginx-1.12.0/nginx_1.12.0-1_amd64.deb" "$DIRNAME"
 sleep 1
 docker rm $containerID
