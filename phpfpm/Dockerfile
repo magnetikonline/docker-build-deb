@@ -1,13 +1,13 @@
 FROM ubuntu:16.04
 MAINTAINER Peter Mescalchin <peter@magnetikonline.com>
 
-ENV VERSION 7.1.3
+ENV VERSION 7.1.11
 
-RUN apt-get update && apt-get -y upgrade && \
-	apt-get -y install checkinstall libcurl4-openssl-dev libjpeg62-dev libpng12-dev libxml2-dev && \
+RUN apt-get update && apt-get upgrade --yes && \
+	apt-get install --yes checkinstall libcurl4-openssl-dev libjpeg62-dev libpng12-dev libxml2-dev && \
 	apt-get clean
 
-ADD http://php.net/get/php-$VERSION.tar.gz/from/this/mirror /root/build/php-$VERSION.tar.gz
+ADD https://php.net/get/php-$VERSION.tar.gz/from/this/mirror /root/build/php-$VERSION.tar.gz
 WORKDIR /root/build
 RUN tar -xf php-$VERSION.tar.gz
 
@@ -17,7 +17,13 @@ RUN chmod u+x configure.sh
 RUN ./configure.sh && make
 
 RUN echo "magnetikonline: PHP (with FPM)" >description-pak && \
-	checkinstall -Dy --install=no --nodoc --pkgname=php --pkgversion=$VERSION \
-		make -i install
+	checkinstall \
+		--default \
+		--install=no \
+		--nodoc \
+		--pkgname=php \
+		--pkgversion=$VERSION \
+		--type=debian \
+			make -i install
 
 CMD ["/bin/bash"]

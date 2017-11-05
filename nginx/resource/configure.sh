@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
 ./configure \
+	--sbin-path=/usr/local/sbin \
 	--conf-path=/etc/nginx/nginx.conf \
 	--error-log-path=/var/log/nginx/error.log \
 	--pid-path=/run/nginx.pid \

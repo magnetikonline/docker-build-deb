@@ -20,7 +20,7 @@ Alternatively (and probably a better idea), install the latest stable [`docker-e
 
 ## Nginx
 - **OS:** Ubuntu 16.04LTS
-- **Version:** 1.12.0
+- **Version:** 1.12.2
 - **Configure:** [nginx/resource/configure.sh](nginx/resource/configure.sh)
 
 Create and extract package:
@@ -31,19 +31,19 @@ $ ./build.sh
 $ ./extractdeb.sh
 # package extract from container
 
-$ ls -l nginx_1.12.0-1_amd64.deb
--rw-r--r-- 1 root root 236004 Apr 28 10:12 nginx_1.12.0-1_amd64.deb
+$ ls -l nginx_1.12.2-1_amd64.deb
+-rw-r--r-- 1 root root 236338 Nov 5 21:30 nginx_1.12.2-1_amd64.deb
 ```
 
 Install on target system:
 ```sh
 # should be no dependent packages needed - based off packaged configure.sh
-$ sudo dpkg -i /path/to/nginx_1.12.0-1_amd64.deb
+$ sudo dpkg -i /path/to/nginx_1.12.2-1_amd64.deb
 ```
 
 ## PHP-FPM
 - **OS:** Ubuntu 16.04LTS
-- **Version:** 7.1.3 (PHP-FPM and CLI)
+- **Version:** 7.1.11 (PHP-FPM and CLI)
 - **Configure:** [phpfpm/resource/configure.sh](phpfpm/resource/configure.sh)
 
 Create and extract package:
@@ -54,13 +54,13 @@ $ ./build.sh
 $ ./extractdeb.sh
 # package extract from container
 
-$ ls -l php_7.1.3-1_amd64.deb
--rw-r--r-- 1 root root 4373646 Mar 19 15:15 php_7.1.3-1_amd64.deb
+$ ls -l php_7.1.11-1_amd64.deb
+-rw-r--r-- 1 root root 4388528 Nov 5 21:59 php_7.1.11-1_amd64.deb
 ```
 
 Install on target system:
 ```sh
 # install dependent packages - based off packaged configure.sh
 $ sudo apt-get install libjpeg62
-$ sudo dpkg -i /path/to/php_7.1.3-1_amd64.deb
+$ sudo dpkg -i /path/to/php_7.1.11-1_amd64.deb
 ```

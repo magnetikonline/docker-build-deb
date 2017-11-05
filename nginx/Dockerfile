@@ -1,13 +1,13 @@
 FROM ubuntu:16.04
 MAINTAINER Peter Mescalchin <peter@magnetikonline.com>
 
-ENV VERSION 1.12.0
+ENV VERSION 1.12.2
 
-RUN apt-get update && apt-get -y upgrade && \
-	apt-get -y install checkinstall libpcre3-dev zlib1g-dev && \
+RUN apt-get update && apt-get upgrade --yes && \
+	apt-get install --yes checkinstall libpcre3-dev zlib1g-dev && \
 	apt-get clean
 
-ADD http://nginx.org/download/nginx-$VERSION.tar.gz /root/build/
+ADD https://nginx.org/download/nginx-$VERSION.tar.gz /root/build/
 WORKDIR /root/build
 RUN tar -xf nginx-$VERSION.tar.gz
 
@@ -17,7 +17,13 @@ RUN chmod u+x configure.sh
 RUN ./configure.sh && make
 
 RUN echo "magnetikonline: Nginx" >description-pak && \
-	checkinstall -Dy --install=no --nodoc --pkgname=nginx --pkgversion=$VERSION \
-		make -i install
+	checkinstall \
+		--default \
+		--install=no \
+		--nodoc \
+		--pkgname=nginx \
+		--pkgversion=$VERSION \
+		--type=debian \
+			make -i install
 
 CMD ["/bin/bash"]
