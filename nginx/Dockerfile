@@ -16,7 +16,8 @@ WORKDIR /root/build/nginx-$VERSION
 RUN chmod u+x configure.sh
 RUN ./configure.sh && make
 
-RUN echo "magnetikonline: Nginx $VERSION" >description-pak && \
-	checkinstall -Dy --install=no --nodoc make -i install
+RUN echo "magnetikonline: Nginx" >description-pak && \
+	checkinstall -Dy --install=no --nodoc --pkgname=nginx --pkgversion=$VERSION \
+		make -i install
 
 CMD ["/bin/bash"]

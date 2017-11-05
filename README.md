@@ -9,7 +9,7 @@ Collection of [Docker](https://www.docker.com) images to build Debian/Ubuntu deb
 
 When installing package on target system remember that dependent packages will need to be installed manually, they are not brought over by the `checkinstall` process.
 
-**For Ubuntu 16.04LTS/14.04LTS:** The Docker package from the official Ubuntu repositories is named `docker.io` due to ([somewhat](http://packages.ubuntu.com/trusty/docker.io) [inconveniently](http://packages.ubuntu.com/xenial/docker.io)) an existing package clash. All build scripts assume you have symlinked the `docker.io` binary like so:
+**For Ubuntu 16.04LTS/14.04LTS:** The Docker package from the official Ubuntu repositories is named `docker.io` due to ([somewhat](https://packages.ubuntu.com/trusty/docker.io) [inconveniently](https://packages.ubuntu.com/xenial/docker.io)) an existing package clash. All build scripts assume you have symlinked the `docker.io` binary like so:
 
 ```sh
 $ sudo apt-get install docker.io

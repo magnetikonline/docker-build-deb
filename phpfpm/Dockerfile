@@ -16,7 +16,8 @@ WORKDIR /root/build/php-$VERSION
 RUN chmod u+x configure.sh
 RUN ./configure.sh && make
 
-RUN echo "magnetikonline: PHP $VERSION" >description-pak && \
-	checkinstall -Dy --install=no --nodoc make -i install
+RUN echo "magnetikonline: PHP (with FPM)" >description-pak && \
+	checkinstall -Dy --install=no --nodoc --pkgname=php --pkgversion=$VERSION \
+		make -i install
 
 CMD ["/bin/bash"]
