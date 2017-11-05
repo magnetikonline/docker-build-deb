@@ -24,6 +24,6 @@ RUN echo "magnetikonline: Nginx" >description-pak && \
 		--pkgname=nginx \
 		--pkgversion=$VERSION \
 		--type=debian \
-			make -i install
+			make --ignore-errors install
 
 CMD ["/bin/bash"]

@@ -24,6 +24,6 @@ RUN echo "magnetikonline: PHP (with FPM)" >description-pak && \
 		--pkgname=php \
 		--pkgversion=$VERSION \
 		--type=debian \
-			make -i install
+			make --ignore-errors install
 
 CMD ["/bin/bash"]
