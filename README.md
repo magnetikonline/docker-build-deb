@@ -12,7 +12,7 @@ When installing package on target system remember that dependent packages will n
 **For Ubuntu 16.04LTS/14.04LTS:** The Docker package from the official Ubuntu repositories is named `docker.io` due to ([somewhat](https://packages.ubuntu.com/trusty/docker.io) [inconveniently](https://packages.ubuntu.com/xenial/docker.io)) an existing package clash. All build scripts assume you have symlinked the `docker.io` binary like so:
 
 ```sh
-$ sudo apt-get install docker.io
+$ sudo apt install docker.io
 $ sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
 ```
 
@@ -61,6 +61,6 @@ $ ls -l php_7.1.11-1_amd64.deb
 Install on target system:
 ```sh
 # install dependent packages - based off packaged configure.sh
-$ sudo apt-get install libjpeg62
+$ sudo apt install libjpeg62
 $ sudo dpkg -i /path/to/php_7.1.11-1_amd64.deb
 ```
