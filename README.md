@@ -61,6 +61,6 @@ $ ls -l php_7.1.11-1_amd64.deb
 Install on target system:
 ```sh
 # install dependent packages - based off packaged configure.sh
-$ sudo apt install libjpeg62
+$ sudo apt install libcurl3 libjpeg62
 $ sudo dpkg -i /path/to/php_7.1.11-1_amd64.deb
 ```
