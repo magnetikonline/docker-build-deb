@@ -43,7 +43,7 @@ $ sudo dpkg -i /path/to/nginx_1.12.2-1_amd64.deb
 
 ## PHP-FPM
 - **OS:** Ubuntu 16.04LTS
-- **Version:** 7.1.11 (PHP-FPM and CLI)
+- **Version:** 7.1.12 (PHP-FPM and CLI)
 - **Configure:** [phpfpm/resource/configure.sh](phpfpm/resource/configure.sh)
 
 Create and extract package:
@@ -54,13 +54,13 @@ $ ./build.sh
 $ ./extractdeb.sh
 # package extract from container
 
-$ ls -l php_7.1.11-1_amd64.deb
--rw-r--r-- 1 root root 4388528 Nov 5 21:59 php_7.1.11-1_amd64.deb
+$ ls -l php_7.1.12-1_amd64.deb
+-rw-r--r-- 1 root root 4377808 Nov 26 12:34 php_7.1.12-1_amd64.deb
 ```
 
 Install on target system:
 ```sh
 # install dependent packages - based off packaged configure.sh
 $ sudo apt install libcurl3 libjpeg62
-$ sudo dpkg -i /path/to/php_7.1.11-1_amd64.deb
+$ sudo dpkg -i /path/to/php_7.1.12-1_amd64.deb
 ```
