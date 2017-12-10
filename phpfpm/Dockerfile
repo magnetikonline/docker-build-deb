@@ -9,7 +9,7 @@ RUN apt-get update && apt-get upgrade --yes && \
 
 ADD https://php.net/get/php-$VERSION.tar.gz/from/this/mirror /root/build/php-$VERSION.tar.gz
 WORKDIR /root/build
-RUN tar -xf php-$VERSION.tar.gz
+RUN tar --extract --file php-$VERSION.tar.gz
 
 ADD ./resource/configure.sh /root/build/php-$VERSION/
 WORKDIR /root/build/php-$VERSION

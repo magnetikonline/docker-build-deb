@@ -9,7 +9,7 @@ RUN apt-get update && apt-get upgrade --yes && \
 
 ADD https://nginx.org/download/nginx-$VERSION.tar.gz /root/build/
 WORKDIR /root/build
-RUN tar -xf nginx-$VERSION.tar.gz
+RUN tar --extract --file nginx-$VERSION.tar.gz
 
 ADD ./resource/configure.sh /root/build/nginx-$VERSION/
 WORKDIR /root/build/nginx-$VERSION
