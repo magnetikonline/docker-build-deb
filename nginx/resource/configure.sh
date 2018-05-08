@@ -13,9 +13,11 @@
 	--without-http_charset_module \
 	--without-http_empty_gif_module \
 	--without-http_geo_module \
+	--without-http_grpc_module \
 	--without-http_limit_conn_module \
 	--without-http_limit_req_module \
 	--without-http_memcached_module \
+	--without-http_mirror_module \
 	--without-http_proxy_module \
 	--without-http_referer_module \
 	--without-http_scgi_module \
