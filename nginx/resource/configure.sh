@@ -1,10 +1,10 @@
 #!/bin/bash -e
 
 ./configure \
-	--sbin-path=/usr/local/sbin \
 	--conf-path=/etc/nginx/nginx.conf \
 	--error-log-path=/var/log/nginx/error.log \
 	--pid-path=/run/nginx.pid \
+	--sbin-path=/usr/local/sbin \
 	--with-http_gzip_static_module \
 	--with-http_stub_status_module \
 	--with-http_v2_module \
