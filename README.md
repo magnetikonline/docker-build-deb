@@ -45,7 +45,7 @@ $ sudo dpkg -i /path/to/nginx_1.14.0-1_amd64.deb
 
 ## PHP-FPM
 - **OS:** Ubuntu 18.04LTS
-- **Version:** 7.2.5 (PHP-FPM and CLI)
+- **Version:** 7.2.21 (PHP-FPM and CLI)
 - **Configure:** [`phpfpm/resource/configure.sh`](phpfpm/resource/configure.sh)
 
 Create and extract package:
@@ -57,8 +57,8 @@ $ ./build.sh
 $ ./extractdeb.sh
 # package extract from container
 
-$ ls -l php_7.2.5-1_amd64.deb
--rw-r--r-- 1 root root 9501708 May 8 15:44 php_7.2.5-1_amd64.deb
+$ ls -l php_7.2.21-1_amd64.deb
+-rw-r--r-- 1 root root 9618732 Aug 23 23:18 php_7.2.21-1_amd64.deb
 ```
 
 Install on target system:
@@ -66,5 +66,5 @@ Install on target system:
 ```sh
 # install dependent packages - based off packaged configure.sh
 $ sudo apt install libcurl3 libjpeg62
-$ sudo dpkg -i /path/to/php_7.2.5-1_amd64.deb
+$ sudo dpkg -i /path/to/php_7.2.21-1_amd64.deb
 ```

@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
-MAINTAINER Peter Mescalchin <peter@magnetikonline.com>
+LABEL maintainer="Peter Mescalchin <peter@magnetikonline.com>"
 
-ENV VERSION "7.2.5"
+ARG VERSION="7.2.21"
 
 RUN apt-get update && apt-get upgrade --yes && \
 	apt-get install --yes checkinstall libcurl4-openssl-dev libjpeg62-dev libpng-dev libxml2-dev && \
