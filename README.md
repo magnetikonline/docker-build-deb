@@ -1,4 +1,5 @@
 # Docker deb builders
+
 Collection of [Docker](https://www.docker.com) images to build Debian/Ubuntu deb packages. All tested under Ubuntu 18.04LTS (previously 14.04LTS).
 
 - For each package, given `Dockerfile` will build an OS image and create a target deb package using [`checkinstall`](https://help.ubuntu.com/community/CheckInstall).
@@ -19,6 +20,7 @@ $ sudo ln --force --symbolic /usr/bin/docker.io /usr/local/bin/docker
 Alternatively (and probably better), install latest stable [`docker-ce`](https://docs.docker.com/install/linux/docker-ce/ubuntu/) package from Docker's own repository.
 
 ## Nginx
+
 - **OS:** Ubuntu 18.04LTS
 - **Version:** 1.14.0
 - **Configure:** [`nginx/resource/configure.sh`](nginx/resource/configure.sh)
@@ -44,6 +46,7 @@ $ sudo dpkg -i /path/to/nginx_1.14.0-1_amd64.deb
 ```
 
 ## PHP-FPM
+
 - **OS:** Ubuntu 18.04LTS
 - **Version:** 7.2.21 (PHP-FPM and CLI)
 - **Configure:** [`phpfpm/resource/configure.sh`](phpfpm/resource/configure.sh)
